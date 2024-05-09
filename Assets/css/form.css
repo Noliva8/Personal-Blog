@@ -23,6 +23,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -58,8 +59,30 @@ body{
     border-radius: 10px;
     
 }
+main{
+    margin-left:auto;
+    margin-right: auto;
+    width: 96%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
 
+label,input{
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
 
+}
+
+textarea{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
 
 
 
@@ -102,6 +125,7 @@ body{
     background-color: transparent;
 }
 
+/* Separation line */
 
 .separation-lign{
     width: 96%;
@@ -112,4 +136,81 @@ body{
 }
 .second{
     margin-top: 4px;
+}
+
+.vertical-separation-line{
+height: 86vh;
+    width: 2px;
+    background-color: black;
+    margin: auto;
+    float: left;
+}
+
+.second1{
+    margin-left: 4px;
+}
+
+
+/* first blog section */
+
+.first-blog{
+    float: left;
+    height: calc(100vh - 110px);
+    width: calc(96% / 2);
+   
+}
+
+
+.first-blog-header{
+    width: 400px;
+    height: 400px;
+    background:repeating-linear-gradient(yellow, yellow 10%, green);
+   text-align: center;
+   margin-top: 30%;
+   margin-left:auto;
+   margin-right: auto;
+   border-radius: 50%;
+   box-shadow: 1px 1px 2px 2px black;
+
+   
+}
+
+.first-blog-header h1{
+    color: white;
+    padding-top: 190px;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 900;
+    
+}
+
+
+
+/* gate section */
+
+.gate{
+   float: right;
+    height: calc(100vh - 110px);
+    width: calc(96% / 2);
+}
+.gate h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 30%;
+    font-weight: bold;
+
+}
+
+
+#submit{
+    width: 100%;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+
 }
