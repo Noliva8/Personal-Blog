@@ -1,0 +1,273 @@
+/* css resset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  border: solid black 1px;
+  width: 100%;
+  height: 100vh;
+  margin: 40px;
+  border-radius: 10px;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+}
+
+/* header styling */
+
+.header-container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.blanding h1 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.functionality {
+  display: flex;
+  gap: 40px;
+  margin-right: 100px;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+ display: none;
+}
+
+
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+.toggle img {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.toggle input[type="checkbox"]:checked + img:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+
+.go-bak {
+  background-color: black;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.go-bak a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.go-bak i {
+  margin-right: 10px;
+}
+
+/* Separation line */
+
+.separation-lign {
+  width: 96%;
+  height: 1px;
+  background-color: black;
+  margin: auto;
+}
+.second {
+  margin-top: 4px;
+}
+
+.vertical-separation-line {
+  height: 86vh;
+  width: 2px;
+  background-color: black;
+  margin: auto;
+  float: left;
+}
+
+.second1 {
+  margin-left: 4px;
+}
+
+
+.dark {
+  background-color: black;
+  height: 100vh;
+  color: #bebebe
+ 
+}
+
+.dark h1{
+    color: white;
+}
+.dark .go-bak{
+    background-color: white;
+}
+
+ .dark i, .dark a{
+    color: black;
+ }
+
+.dark img{
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+
+.light {
+  background-color: white;
+  color:black;
+  height: 100vh;
+}
