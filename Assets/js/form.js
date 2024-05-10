@@ -14,7 +14,7 @@ function formSubmition (event){
 event.preventDefault();
 
 
-if (inputName.value.trim() === '' || inputTitle.value.trim() === '') {
+if (inputName.value.trim() === '' || inputTitle.value.trim() === '' || contentEl.value.trim() === '') {
     errorMessageEl.setAttribute('style', 'color: red; font-size: 20px; display: block;');
     return;
 }
