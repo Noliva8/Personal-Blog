@@ -214,3 +214,8 @@ height: 86vh;
     cursor: pointer;
 
 }
+
+
+#errorMessage{
+    display: none;
+}

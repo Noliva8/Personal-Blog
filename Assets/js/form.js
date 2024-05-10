@@ -5,13 +5,22 @@ const inputName = document.getElementById('Uname');
 const inputTitle = document.getElementById('title');
 const contentEl = document.getElementById('content');
 const buttonEl = document.getElementById('submit');
-
+const errorMessageEl = document.getElementById('errorMessage');
 
 
 
 function formSubmition (event){
     // prevent default brwoiser
 event.preventDefault();
+
+
+if (inputName.value.trim() === '' || inputTitle.value.trim() === '') {
+    errorMessageEl.setAttribute('style', 'color: red; font-size: 20px; display: block;');
+    return;
+}
+errorMessageEl.style.display = 'none';
+
+
 // storing data to localStorage
 localStorage.setItem("UserName", inputName.value);
 localStorage.setItem("title", inputTitle.value);
