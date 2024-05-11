@@ -219,3 +219,36 @@ height: 86vh;
 #errorMessage{
     display: none;
 }
+
+
+/* Responsivness */
+
+@media screen and (max-width: 868px) {
+  #parents{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .vertical-separation-line{
+    display: none;
+  }
+
+  .first-blog-header{
+  }
+
+  .gate{
+   
+    height: auto;
+    width: 100%;
+}
+
+.first-blog{
+   
+    height:auto;
+    width: 80%;
+   margin: auto;
+}
+body{
+    border-bottom:  solid black 0px;
+}
+}

@@ -22,16 +22,24 @@ errorMessageEl.style.display = 'none';
 
 
 // storing data to localStorage
-localStorage.setItem("UserName", inputName.value);
-localStorage.setItem("title", inputTitle.value);
-localStorage.setItem("content", contentEl.value);
+ localStorage.setItem("UserName", JSON.stringify(inputName.value));
+ localStorage.setItem("Title", inputTitle.value);
+localStorage.setItem("Content", contentEl.value);
+
+// retrieving data
+
+ const storedItem = window.localStorage.getItem('userName');
+
 
    // Directing the user to the blog page
+
 
 window.location.href = './blog.html';
 }
 
 formEl.addEventListener('submit', formSubmition);
+
+
 
 
 
