@@ -22,13 +22,30 @@ errorMessageEl.style.display = 'none';
 
 
 // storing data to localStorage
- localStorage.setItem("UserName", JSON.stringify(inputName.value));
- localStorage.setItem("Title", inputTitle.value);
-localStorage.setItem("Content", contentEl.value);
+//  localStorage.setItem("UserName", inputName.value);
+//  localStorage.setItem("Title", inputTitle.value);
+// localStorage.setItem("Content", contentEl.value);
 
-// retrieving data
 
- const storedItem = window.localStorage.getItem('userName');
+const data = {
+    userName:inputName.value,
+    title: inputTitle.value,
+    content: contentEl.value,
+
+}
+let blogPost;
+if (localStorage.getItem("blogPost")){
+blogPost = JSON.parse(localStorage.getItem("blogPost"))
+}else{ 
+blogPost =[];
+}
+
+blogPost.push(data);
+localStorage.setItem("blogPost", JSON.stringify(blogPost));
+
+
+
+
 
 
    // Directing the user to the blog page
